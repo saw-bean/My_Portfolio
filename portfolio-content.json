@@ -1,0 +1,172 @@
+{
+  "proofMetrics": [
+    {
+      "value": "2+",
+      "title": "Years of Hands-On Support",
+      "text": "Delivered day-to-day IT and security support across production environments."
+    },
+    {
+      "value": "2",
+      "title": "Operational Environments",
+      "text": "Supported both retail business operations and a multi-site academic institution."
+    },
+    {
+      "value": "4",
+      "title": "Core Focus Areas",
+      "text": "IT technician support, hardware repair, Red Team mindset, and IT security operations."
+    }
+  ],
+  "skills": [
+    {
+      "icon": "🧰",
+      "title": "IT Technician and Hardware Repair",
+      "tags": [
+        "Hardware Diagnostics",
+        "Desktop and Laptop Repair",
+        "Part Replacement",
+        "System Upgrades",
+        "Device Recovery"
+      ]
+    },
+    {
+      "icon": "🌐",
+      "title": "Networking",
+      "tags": [
+        "TCP/IP",
+        "Wireless Networks",
+        "Active Directory",
+        "Network Security",
+        "Connectivity Troubleshooting"
+      ]
+    },
+    {
+      "icon": "⚙️",
+      "title": "Cybersecurity and Endpoint Defense",
+      "tags": [
+        "CompTia Security+",
+        "Endpoint Security",
+        "Patch Management",
+        "Security Best Practices",
+        "EDR"
+      ]
+    },
+    {
+      "icon": "🎯",
+      "title": "Red Team and IT Security",
+      "tags": [
+        "Red Team Mindset",
+        "Vulnerability Assessment",
+        "Reconnaissance Basics",
+        "Threat-Informed Troubleshooting",
+        "Security Control Validation"
+      ]
+    },
+    {
+      "icon": "🔧",
+      "title": "Systems Administration",
+      "tags": [
+        "Microsoft 365",
+        "Active Directory",
+        "Windows Server",
+        "User & Permission Management"
+      ]
+    },
+    {
+      "icon": "🖨️",
+      "title": "IT Support Operations",
+      "tags": [
+        "Ticket Resolution",
+        "User Support",
+        "Peripheral Setup",
+        "POS and Device Support"
+      ]
+    },
+    {
+      "icon": "🖥️",
+      "title": "Scripting and Automation",
+      "tags": [
+        "Python",
+        "PowerShell",
+        "Reporting Automation",
+        "Admin Task Automation"
+      ]
+    },
+    {
+      "icon": "🎯",
+      "title": "Certifications",
+      "tags": [
+        "CompTia Security+",
+        "PG Cert Cybersecurity",
+        "PG Cert AI & ML",
+        "BSc Ethical Hacking"
+      ]
+    }
+  ],
+  "caseStudy": {
+    "title": "Mini Case Study: Operational Device Stability",
+    "problem": "Frequent device and software issues interrupted operations and slowed daily workflows.",
+    "action": "Applied structured troubleshooting, proactive checks, and accurate configuration documentation.",
+    "result": "Improved service continuity with faster recovery and fewer repeated support issues."
+  },
+  "impactCards": [
+    {
+      "image": "images/optimized/project-fraud.jpg",
+      "fallbackImage": "images/project-fraud.jpg",
+      "alt": "Hardware repair and diagnostic workflow",
+      "title": "Hardware Diagnostics and Repair",
+      "description": "Diagnosed device failures, completed component replacements, and restored stable workstation performance.",
+      "tags": [
+        "Hardware Repair",
+        "Diagnostics",
+        "IT Technician"
+      ]
+    },
+    {
+      "image": "images/optimized/project-cnn.jpg",
+      "fallbackImage": "images/project-cnn.jpg",
+      "alt": "IT security and account administration workflow",
+      "title": "IT Security and Account Administration",
+      "description": "Managed user accounts and permissions while applying security-first controls in Microsoft 365 and Active Directory.",
+      "tags": [
+        "Microsoft 365",
+        "Active Directory",
+        "IT Security"
+      ]
+    },
+    {
+      "image": "images/optimized/project-sentiment.jpg",
+      "fallbackImage": "images/project-sentiment.jpg",
+      "alt": "Network and incident troubleshooting workflow",
+      "title": "Network and Incident Troubleshooting",
+      "description": "Diagnosed and resolved hardware, software, and connectivity issues with clear escalation paths for complex incidents.",
+      "tags": [
+        "Network Troubleshooting",
+        "Hardware/Software Support",
+        "Incident Response"
+      ]
+    },
+    {
+      "image": "images/optimized/project-maintenance.jpg",
+      "fallbackImage": "images/project-maintenance.jpg",
+      "alt": "IT security automation and scripting workflow",
+      "title": "Security Automation and Scripting",
+      "description": "Applied Python and PowerShell to automate administrative checks and security-oriented reporting workflows.",
+      "tags": [
+        "Python",
+        "PowerShell",
+        "Security Operations"
+      ]
+    },
+    {
+      "image": "images/optimized/project-recommendation.jpg",
+      "fallbackImage": "images/project-recommendation.jpg",
+      "alt": "Documentation and compliance records",
+      "title": "Records and Audit Readiness",
+      "description": "Maintained accurate system records, service logs, and asset documentation for operational integrity and traceability.",
+      "tags": [
+        "Documentation",
+        "Compliance"
+      ]
+    }
+  ]
+}

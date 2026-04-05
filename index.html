@@ -3,18 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sabin Khatri - IT & Systems Support Analyst | Cybersecurity Expert | AI/ML Enthusiast">
-    <meta name="keywords" content="Sabin Khatri, IT Support, Cybersecurity, System Analyst, Portfolio, AI, Machine Learning">
+    <meta name="description" content="Sabin Khatri - IT Technician focused on hardware repair, IT Security, Red Team mindset, networking, and secure systems support with hands-on operational experience.">
+    <meta name="keywords" content="Sabin Khatri, IT Technician, Hardware Repair, Computer Repair, Troubleshooting, Networking, IT Support, Cybersecurity, Red Team, IT Security, Active Directory, Sudbury">
     <meta name="author" content="Sabin Khatri">
-    <title>Sabin Khatri | IT & Systems Support Analyst</title>
+    <title>Sabin Khatri | IT Technician, Hardware Repair, and IT Security</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="boot-loader" class="boot-loader" aria-hidden="true">
+        <div class="boot-terminal">
+            <div class="boot-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="boot-title">terminal</span>
+            </div>
+            <div class="boot-body">
+                <p class="boot-line boot-line-command">
+                    <span class="boot-prompt">$</span>
+                    <span id="boot-command"></span><span class="boot-cursor">|</span>
+                </p>
+                <p class="boot-line boot-line-status" id="boot-status">initializing shell...</p>
+                <pre class="boot-ascii" id="boot-ascii">
+  ____    _    ____ ___ _   _   _  __ _   _    _  _____ ____  ___
+ / ___|  / \  | __ )_ _| \ | | | |/ /| | | |  / \|_   _|  _ \|_ _|
+ \___ \ / _ \ |  _ \| ||  \| | | ' / | |_| | / _ \ | | | |_) || |
+  ___) / ___ \| |_) | || |\  | | . \ |  _  |/ ___ \| | |  _ < | |
+ |____/_/   \_\____/___|_| \_| |_|\_\|_| |_/_/   \_\_| |_| \_\___|
+                </pre>
+                <p class="boot-line boot-line-muted" id="boot-loading">loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="command-palette" class="command-palette" aria-hidden="true">
+        <div class="command-panel" role="dialog" aria-modal="true" aria-labelledby="command-title">
+            <div class="command-head">
+                <span class="command-title" id="command-title">terminal command palette</span>
+                <span class="command-hint">press Esc to close</span>
+            </div>
+            <div class="command-input-wrap">
+                <span class="command-prompt">$</span>
+                <input id="command-input" class="command-input" type="text" autocomplete="off" spellcheck="false" placeholder="type: home, about, skills, security, projects, contact, help" aria-label="Command input" />
+            </div>
+            <p id="command-output" class="command-output" aria-live="polite">type a command and press Enter.</p>
+            <div class="command-quick-list">
+                <button type="button" class="command-chip" data-command="home">home</button>
+                <button type="button" class="command-chip" data-command="about">about</button>
+                <button type="button" class="command-chip" data-command="skills">skills</button>
+                <button type="button" class="command-chip" data-command="security">security</button>
+                <button type="button" class="command-chip" data-command="experience">experience</button>
+                <button type="button" class="command-chip" data-command="projects">projects</button>
+                <button type="button" class="command-chip" data-command="education">education</button>
+                <button type="button" class="command-chip" data-command="contact">contact</button>
+                <button type="button" class="command-chip" data-command="help">help</button>
+            </div>
+        </div>
+    </div>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary">
         <div class="nav-container">
             <div class="logo">
                 <span class="logo-text">SK</span>
@@ -24,48 +77,53 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#security">Security</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects">Capabilities</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
 
+    <main id="main-content">
+
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-background-image">
-            <img src="images/PROFILE.jpeg" alt="Sabin Khatri" class="hero-bg-img">
+            <img src="images/optimized/PROFILE.jpeg" alt="Portrait of Sabin Khatri" class="hero-bg-img" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='images/PROFILE.jpeg';">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
             <div class="hero-text">
                 <div class="hero-badge">
-                    <span>👋 Hello, I'm</span>
+                    <span>👋 Hello, I am</span>
                 </div>
                 <h1 class="hero-title">
                     <span class="title-line">Sabin Khatri</span>
                 </h1>
                 <p class="hero-subtitle">
-                    IT & Systems Support Analyst
+                    IT Technician, Hardware Repair, Red Team Mindset, and IT Security
                 </p>
                 <p class="hero-description">
-                    Bridging cybersecurity expertise with cutting-edge AI/ML solutions. 
-                    I transform complex technical challenges into streamlined, secure systems 
-                    that power modern organizations.
+                    IT Technician with 2+ years of hands-on experience in hardware diagnostics,
+                    computer repair, device setup, and network troubleshooting. Also experienced in
+                    endpoint security, IT security practices, and systems administration, with
+                    CompTia Security+ certification and practical delivery across business and
+                    institutional environments.
                 </p>
                 <div class="hero-stats">
                     <div class="stat-item">
-                        <span class="stat-number">3+</span>
+                        <span class="stat-number">2+</span>
                         <span class="stat-label">Years Experience</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Projects Completed</span>
+                        <span class="stat-number">CompTia</span>
+                        <span class="stat-label">Security+</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Client Satisfaction</span>
+                        <span class="stat-number">Red Team</span>
+                        <span class="stat-label">IT Security Focus</span>
                     </div>
                 </div>
                 <div class="hero-contact">
@@ -81,6 +139,9 @@
                                 <path d="M17.5 12.5V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V12.5M13.3333 8.33333L10 11.6667M10 11.6667L6.66667 8.33333M10 11.6667V2.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <span>Download Resume</span>
+                        </a>
+                        <a href="#contact" class="contact-btn tertiary">
+                            <span>Open to Work</span>
                         </a>
                     </div>
                     <div class="contact-info">
@@ -104,58 +165,77 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-label">About Me</span>
-                <h2 class="section-title">Crafting Secure, Intelligent Systems</h2>
+                <h2 class="section-title">IT Technician Focus with Hardware Repair, Red Team, and IT Security</h2>
             </div>
             <div class="about-content">
                 <div class="about-image-wrapper">
                     <div class="about-image">
-                        <img src="images/about-work.jpg" alt="Work Environment" loading="lazy" onerror="this.style.display='none';">
+                        <img src="images/optimized/about-work.jpg" alt="Secure workstation and network operations environment" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/about-work.jpg';">
                         <div class="image-overlay"></div>
                     </div>
                     <div class="about-badge">
                         <span class="badge-icon">🔒</span>
                         <div>
-                            <span class="badge-title">CompTIA Security+</span>
+                            <span class="badge-title">CompTia Security+</span>
                             <span class="badge-subtitle">Certified Professional</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-text">
                     <p class="about-intro">
-                        I'm a passionate IT & Systems Support Analyst with a unique blend of 
-                        cybersecurity expertise and AI/ML innovation. My journey spans from 
-                        ethical hacking to building intelligent systems that solve real-world problems.
+                        I bring a practical IT Technician approach to day-to-day support by diagnosing
+                        hardware issues quickly, repairing and configuring systems, improving network
+                        reliability, and applying IT security and Red Team-informed thinking to reduce
+                        risk. I am organized, dependable, and comfortable working independently across
+                        hardware, networking, and secure IT support.
                     </p>
                     <div class="about-highlights">
                         <div class="highlight-item">
                             <div class="highlight-icon">🛡️</div>
                             <div>
-                                <h4>Security First</h4>
-                                <p>Hardening systems and networks across Windows, Linux, and macOS platforms</p>
+                                <h4>IT Technician and Hardware Repair</h4>
+                                <p>Hands-on troubleshooting, part replacement, system upgrades, and device recovery to reduce downtime</p>
                             </div>
                         </div>
                         <div class="highlight-item">
                             <div class="highlight-icon">🤖</div>
                             <div>
-                                <h4>AI/ML Innovation</h4>
-                                <p>Building intelligent solutions from fraud detection to RAG-powered chatbots</p>
+                                <h4>Networking and Infrastructure</h4>
+                                <p>TCP/IP troubleshooting, wireless connectivity support, Active Directory operations, and network security practices</p>
                             </div>
                         </div>
                         <div class="highlight-item">
                             <div class="highlight-icon">⚡</div>
                             <div>
-                                <h4>Problem Solver</h4>
-                                <p>Transforming complex technical challenges into streamlined solutions</p>
+                                <h4>Secure Systems Administration</h4>
+                                <p>Endpoint hardening, patch workflows, Microsoft 365 administration, and practical service documentation</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🎯</div>
+                            <div>
+                                <h4>Red Team and IT Security Mindset</h4>
+                                <p>Threat-aware support, vulnerability-oriented checks, and practical security controls to improve resilience</p>
                             </div>
                         </div>
                     </div>
                     <p class="about-closing">
-                        Whether it's troubleshooting critical system issues, implementing security 
-                        protocols, or deploying ML models, I bring a methodical approach and 
-                        innovative thinking to every project.
+                        My approach combines hardware-first troubleshooting, network support, and
+                        accurate documentation to minimize downtime and keep environments reliable.
                     </p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Proof Section -->
+    <section id="proof" class="section proof-section" aria-labelledby="proof-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Proof of Impact</span>
+                <h2 class="section-title" id="proof-title">Measured Outcomes and Focus Areas</h2>
+            </div>
+            <div class="proof-grid" id="proof-grid"></div>
         </div>
     </section>
 
@@ -163,70 +243,90 @@
     <section id="skills" class="section skills-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Technical Expertise</span>
-                <h2 class="section-title">Technologies I Work With</h2>
+                <span class="section-label">Core Competencies</span>
+                <h2 class="section-title">IT Technician, Hardware Repair, IT Security, and Networking Skill Set</h2>
             </div>
             <div class="skills-visual">
                 <div class="skills-image">
-                    <img src="images/skills-tech.jpg" alt="Technology Stack" loading="lazy" onerror="this.style.display='none';">
+                    <img src="images/optimized/skills-tech.jpg" alt="Networking, monitoring, and systems administration setup" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/skills-tech.jpg';">
                 </div>
             </div>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3 class="skill-title">Operating Systems</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Windows</span>
-                        <span class="tag">Linux</span>
-                        <span class="tag">macOS</span>
-                    </div>
+            <div class="skills-grid" id="skills-grid"></div>
+        </div>
+    </section>
+
+    <!-- Security Lab Section -->
+    <section id="security" class="section security-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Red Team and IT Security</span>
+                <h2 class="section-title">Security Operations Snapshot</h2>
+            </div>
+            <div class="security-status-strip" aria-label="Security status">
+                <div class="security-status-item">
+                    <span class="status-dot status-ok"></span>
+                    <span class="status-label">Patch Level</span>
+                    <span class="status-value" data-rotate="Current|Verified|Stable">Current</span>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🌐</div>
-                    <h3 class="skill-title">Network & Security</h3>
-                    <div class="skill-tags">
-                        <span class="tag">LAN Support</span>
-                        <span class="tag">Firewall Config</span>
-                        <span class="tag">Endpoint Protection</span>
-                        <span class="tag">Network Security</span>
-                    </div>
+                <div class="security-status-item">
+                    <span class="status-dot status-ok"></span>
+                    <span class="status-label">Incident Readiness</span>
+                    <span class="status-value" data-rotate="Monitored|Ready|Tested">Monitored</span>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">⚙️</div>
-                    <h3 class="skill-title">System Administration</h3>
-                    <div class="skill-tags">
-                        <span class="tag">User Management</span>
-                        <span class="tag">Workstation Config</span>
-                        <span class="tag">UNIX Basics</span>
-                    </div>
+                <div class="security-status-item">
+                    <span class="status-dot status-ok"></span>
+                    <span class="status-label">Audit Documentation</span>
+                    <span class="status-value" data-rotate="Maintained|Updated|Reviewed">Maintained</span>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🔧</div>
-                    <h3 class="skill-title">Tools & Software</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Microsoft Office</span>
-                        <span class="tag">Ticketing Systems</span>
-                        <span class="tag">Remote Support</span>
-                    </div>
+                <div class="security-status-item">
+                    <span class="status-dot status-info"></span>
+                    <span class="status-label">Security Validation</span>
+                    <span class="status-value" data-rotate="Scheduled|In Queue|Upcoming">Scheduled</span>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🖥️</div>
-                    <h3 class="skill-title">Hardware & Troubleshooting</h3>
-                    <div class="skill-tags">
-                        <span class="tag">PC Setup</span>
-                        <span class="tag">Device Troubleshooting</span>
-                        <span class="tag">System Maintenance</span>
+            </div>
+            <div class="security-grid">
+                <article class="security-card">
+                    <h3 class="security-title">Tools and Platforms</h3>
+                    <p class="security-text">
+                        Familiar with practical security tooling and environments used in day-to-day
+                        IT security workflows and validation activities.
+                    </p>
+                    <div class="security-tags">
+                        <span class="security-tag">Nmap</span>
+                        <span class="security-tag">Wireshark</span>
+                        <span class="security-tag">Burp Suite</span>
+                        <span class="security-tag">Kali Linux</span>
+                        <span class="security-tag">Microsoft Defender</span>
                     </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🎯</div>
-                    <h3 class="skill-title">Core Competencies</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Problem Solving</span>
-                        <span class="tag">Technical Support</span>
-                        <span class="tag">Documentation</span>
+                </article>
+
+                <article class="security-card">
+                    <h3 class="security-title">Methodology and Process</h3>
+                    <p class="security-text">
+                        Use a structured approach from reconnaissance to validation and reporting to
+                        improve secure configuration and reduce operational risk.
+                    </p>
+                    <div class="security-steps">
+                        <span class="security-step">Reconnaissance</span>
+                        <span class="security-step">Vulnerability Check</span>
+                        <span class="security-step">Control Validation</span>
+                        <span class="security-step">Remediation Guidance</span>
                     </div>
-                </div>
+                </article>
+
+                <article class="security-card">
+                    <h3 class="security-title">Engagement Scope</h3>
+                    <p class="security-text">
+                        Focused on internal IT security support, endpoint hardening, account security,
+                        network-aware troubleshooting, and practical Red Team-informed checks.
+                    </p>
+                    <ul class="security-list">
+                        <li>Endpoint and workstation security baselines</li>
+                        <li>Identity and access review in Microsoft 365 and AD</li>
+                        <li>Network issue investigation with security context</li>
+                        <li>Operations-ready security documentation</li>
+                    </ul>
+                </article>
             </div>
         </div>
     </section>
@@ -235,50 +335,93 @@
     <section id="experience" class="section experience-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Work Experience</span>
-                <h2 class="section-title">Where I've Made an Impact</h2>
+                <span class="section-label">Professional Experience</span>
+                <h2 class="section-title">Work History</h2>
             </div>
             <div class="experience-timeline">
                 <div class="experience-card">
                     <div class="experience-image">
-                        <img src="images/experience.jpg" alt="Cambrian College" loading="lazy" onerror="this.style.display='none';">
+                        <img src="images/optimized/experience.jpg" alt="IT support and secure systems operations in a business environment" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/experience.jpg';">
                     </div>
                     <div class="experience-content">
                         <div class="experience-header">
                             <div class="experience-badge">Current</div>
                             <div class="experience-meta">
-                                <span class="experience-company">Cambrian College</span>
-                                <span class="experience-date">2025 – Present</span>
+                                <span class="experience-company">Nickel City Surplus</span>
+                                <span class="experience-date">Sep 2024 - Present</span>
                             </div>
                         </div>
-                        <h3 class="experience-title">System Support Specialist</h3>
-                        <p class="experience-role">Research & Development Team</p>
+                        <h3 class="experience-title">IT Technician and Systems Associate</h3>
+                        <p class="experience-role">Sudbury, ON</p>
                         <p class="experience-description">
-                            Leading technical support initiatives for academic research teams, ensuring 
-                            seamless operations across diverse computing environments. My role involves 
-                            proactive system maintenance, security compliance, and innovative 
-                            problem-solving for complex technical challenges.
+                            Provide technician-level IT and systems support across business operations,
+                            including hardware diagnostics, repairs, reliable device performance,
+                            secure software administration, and accurate operational records.
                         </p>
                         <ul class="experience-achievements">
                             <li>
                                 <span class="achievement-icon">✓</span>
-                                Delivered comprehensive technical support across Linux, Windows, and macOS platforms
+                                Diagnosed hardware faults, performed repairs and replacements, and restored devices to reduce downtime
                             </li>
                             <li>
                                 <span class="achievement-icon">✓</span>
-                                Streamlined support processes, reducing resolution time by 40% through improved documentation
+                                Administered POS and inventory systems with updates, checks, and secure configuration changes
                             </li>
                             <li>
                                 <span class="achievement-icon">✓</span>
-                                Maintained 100% security compliance across multi-user research environments
+                                Built and maintained spreadsheets and tracking systems for inventory and operations reporting
                             </li>
                             <li>
                                 <span class="achievement-icon">✓</span>
-                                Enhanced LAN performance and reliability for critical research operations
+                                Verified incoming data and documentation, investigated discrepancies, and resolved issues
                             </li>
                             <li>
                                 <span class="achievement-icon">✓</span>
-                                Provided exceptional user support via multiple channels (phone, email, in-person)
+                                Maintained complete documentation for assets, systems, configurations, and changes
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-image">
+                        <img src="images/optimized/about-work.jpg" alt="Technical support and web operations in an academic environment" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/about-work.jpg';">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <div class="experience-badge">2025</div>
+                            <div class="experience-meta">
+                                <span class="experience-company">Cambrian College</span>
+                                <span class="experience-date">Jan 2025 - Dec 2025</span>
+                            </div>
+                        </div>
+                        <h3 class="experience-title">Research Assistant | Web and Technical Support</h3>
+                        <p class="experience-role">Sudbury, ON</p>
+                        <p class="experience-description">
+                            Delivered web and technical support across a multi-site institutional
+                            environment with focus on account administration, endpoint compliance, and
+                            service quality.
+                        </p>
+                        <ul class="experience-achievements">
+                            <li>
+                                <span class="achievement-icon">✓</span>
+                                Resolved hardware, software, and connectivity incidents, with structured escalation for complex issues
+                            </li>
+                            <li>
+                                <span class="achievement-icon">✓</span>
+                                Administered Microsoft 365 and Active Directory for accounts, permissions, onboarding, and offboarding
+                            </li>
+                            <li>
+                                <span class="achievement-icon">✓</span>
+                                Maintained technical documentation, configuration records, and service logs for tracked changes
+                            </li>
+                            <li>
+                                <span class="achievement-icon">✓</span>
+                                Supported endpoint security through antivirus, patch management, and compliance monitoring
+                            </li>
+                            <li>
+                                <span class="achievement-icon">✓</span>
+                                Applied Python and PowerShell scripting to automate routine administrative and reporting tasks
                             </li>
                         </ul>
                     </div>
@@ -291,134 +434,48 @@
     <section id="projects" class="section projects-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Featured Projects</span>
-                <h2 class="section-title">Innovation in Action</h2>
+                <span class="section-label">Technical Capabilities</span>
+                <h2 class="section-title">IT Technician, Hardware Repair, IT Security, and Networking Impact</h2>
             </div>
 
-            <!-- RAG Projects -->
             <div class="project-category">
                 <div class="category-header">
-                    <h3 class="category-title">🤖 AI & Machine Learning</h3>
-                    <p class="category-subtitle">Retrieval-Augmented Generation Systems</p>
+                    <h3 class="category-title">🛠️ IT Technician, Hardware Support, and IT Security Operations</h3>
+                    <p class="category-subtitle">Practical support with strong hardware troubleshooting and security awareness</p>
                 </div>
                 <div class="project-featured">
                     <div class="project-image-large">
-                        <img src="images/project-rag.jpg" alt="RAG Chatbot System" loading="lazy" onerror="this.style.display='none';">
+                        <img src="images/optimized/skills-tech.jpg" alt="Security-focused networking and systems administration workstation" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/skills-tech.jpg';">
                         <div class="project-overlay">
-                            <span class="project-tag">AI/ML</span>
-                            <span class="project-tag">NLP</span>
+                            <span class="project-tag">Hardware Repair</span>
+                            <span class="project-tag">IT Security</span>
                         </div>
                     </div>
                     <div class="project-content-large">
-                        <h4 class="project-name">RAG-Powered Intelligent Systems</h4>
+                        <h4 class="project-name">Reliable Operations Through Hardware Repair, Network Support, and IT Security</h4>
                         <p class="project-description">
-                            Engineered advanced retrieval-augmented generation chatbots that seamlessly 
-                            integrate transformer-based models with vector databases. Built domain-specific 
-                            question-answering systems and customer support agents that leverage external 
-                            knowledge retrieval with generative AI capabilities.
+                            Hands-on technician support across business and institutional environments
+                            with focus on hardware diagnostics and repair, secure network operations,
+                            resilient endpoint management, Red Team-oriented risk awareness, and
+                            reliable service documentation.
                         </p>
                         <div class="project-features">
-                            <span class="feature">Transformer Models</span>
-                            <span class="feature">Vector Databases</span>
-                            <span class="feature">Document Intelligence</span>
-                            <span class="feature">Process Automation</span>
+                            <span class="feature">Network Troubleshooting</span>
+                            <span class="feature">Hardware Diagnostics</span>
+                            <span class="feature">Access Control</span>
+                            <span class="feature">Red Team Mindset</span>
+                            <span class="feature">Security Documentation</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- ML Projects Grid -->
             <div class="project-category">
                 <div class="category-header">
-                    <h3 class="category-title">🧠 Machine Learning Solutions</h3>
-                    <p class="category-subtitle">Real-World Applications</p>
+                    <h3 class="category-title">🔐 Core IT Technician, Hardware, Red Team, and IT Security Areas</h3>
+                    <p class="category-subtitle">Hardware reliability, network support, Red Team awareness, and secure operations</p>
                 </div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-fraud.jpg" alt="Fraud Detection" loading="lazy" onerror="this.style.display='none';">
-                        </div>
-                        <div class="project-info">
-                            <h4 class="project-name">Fraud Detection System</h4>
-                            <p class="project-description">
-                                Developed ML models using advanced anomaly detection and ensemble methods 
-                                to identify financial fraud patterns in real-time.
-                            </p>
-                            <div class="project-tech">
-                                <span>Anomaly Detection</span>
-                                <span>Ensemble Methods</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-cnn.jpg" alt="Image Classification" loading="lazy" onerror="this.style.display='none';">
-                        </div>
-                        <div class="project-info">
-                            <h4 class="project-name">Image Classification (CNNs)</h4>
-                            <p class="project-description">
-                                Designed and trained deep learning models for accurate medical and 
-                                general image recognition with state-of-the-art CNN architectures.
-                            </p>
-                            <div class="project-tech">
-                                <span>Deep Learning</span>
-                                <span>CNNs</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-sentiment.jpg" alt="Sentiment Analysis" loading="lazy" onerror="this.style.display='none';">
-                        </div>
-                        <div class="project-info">
-                            <h4 class="project-name">Sentiment Analysis Platform</h4>
-                            <p class="project-description">
-                                Built comprehensive NLP workflows for social media sentiment classification 
-                                using transfer learning and advanced text processing techniques.
-                            </p>
-                            <div class="project-tech">
-                                <span>NLP</span>
-                                <span>Transfer Learning</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-maintenance.jpg" alt="Predictive Maintenance" loading="lazy" onerror="this.style.display='none';">
-                        </div>
-                        <div class="project-info">
-                            <h4 class="project-name">Predictive Maintenance</h4>
-                            <p class="project-description">
-                                Engineered ML pipelines to forecast equipment failures and optimize 
-                                maintenance schedules, reducing downtime and operational costs.
-                            </p>
-                            <div class="project-tech">
-                                <span>Time Series</span>
-                                <span>Predictive Analytics</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project-recommendation.jpg" alt="Recommendation System" loading="lazy" onerror="this.style.display='none';">
-                        </div>
-                        <div class="project-info">
-                            <h4 class="project-name">Recommendation System</h4>
-                            <p class="project-description">
-                                Implemented collaborative and content-based filtering algorithms to 
-                                enhance personalization and user experience in e-commerce platforms.
-                            </p>
-                            <div class="project-tech">
-                                <span>Collaborative Filtering</span>
-                                <span>Content-Based</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="projects-grid" id="impact-grid"></div>
             </div>
         </div>
     </section>
@@ -428,16 +485,16 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-label">Education</span>
-                <h2 class="section-title">Learning Never Stops</h2>
+                <h2 class="section-title">Academic Background</h2>
             </div>
             <div class="education-grid">
                 <div class="education-card">
                     <div class="education-icon">🎓</div>
                     <div class="education-content">
                         <h3 class="education-degree">Postgraduate Certificate</h3>
-                        <p class="education-field">Artificial Intelligence & Machine Learning</p>
-                        <p class="education-school">Cambrian College</p>
-                        <p class="education-date">May 2024 – Dec 2024</p>
+                        <p class="education-field">Artificial Intelligence and Machine Learning</p>
+                        <p class="education-school">Cambrian College, Sudbury ON</p>
+                        <p class="education-date">2025</p>
                     </div>
                 </div>
                 <div class="education-card">
@@ -445,22 +502,23 @@
                     <div class="education-content">
                         <h3 class="education-degree">Postgraduate Certificate</h3>
                         <p class="education-field">Cybersecurity</p>
-                        <p class="education-school">Cambrian College</p>
-                        <p class="education-date">Jan 2025 – Aug 2025</p>
+                        <p class="education-school">Cambrian College, Sudbury ON</p>
+                        <p class="education-date">2024</p>
                     </div>
                 </div>
                 <div class="education-card">
                     <div class="education-icon">🛡️</div>
                     <div class="education-content">
-                        <h3 class="education-degree">Bachelor of Science (Hons)</h3>
+                        <h3 class="education-degree">BSc (Hons)</h3>
                         <p class="education-field">Ethical Hacking & Cybersecurity</p>
-                        <p class="education-school">Coventry University</p>
-                        <p class="education-date">Sep 2020 – May 2023</p>
+                        <p class="education-school">Coventry University, United Kingdom</p>
+                        <p class="education-date">2023</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
@@ -468,10 +526,10 @@
             <div class="contact-content">
                 <div class="contact-text">
                     <span class="section-label">Let's Connect</span>
-                    <h2 class="section-title">Ready to Work Together?</h2>
+                    <h2 class="section-title">Let us connect</h2>
                     <p class="contact-description">
-                        I'm always open to discussing new opportunities, innovative projects, 
-                        or just having a conversation about technology and cybersecurity.
+                        I am available for IT Technician, hardware repair, networking,
+                        Red Team-oriented, and IT security-focused opportunities in Sudbury and surrounding areas.
                     </p>
                     <div class="contact-methods">
                         <a href="mailto:khatrisa9@gmail.com" class="contact-method">
@@ -495,6 +553,13 @@
                                 <span class="method-value">Sudbury, Ontario</span>
                             </div>
                         </div>
+                        <div class="contact-method">
+                            <span class="method-icon">🛡️</span>
+                            <div>
+                                <span class="method-label">Certification</span>
+                                <span class="method-value">CompTia Security+</span>
+                            </div>
+                        </div>
                         <a href="resume/Sabin_Khatri_Resume.pdf" download="Sabin_Khatri_Resume.pdf" class="contact-method resume-download">
                             <span class="method-icon">📄</span>
                             <div>
@@ -509,17 +574,18 @@
                 </div>
                 <div class="reference-card">
                     <div class="reference-header">
-                        <span class="reference-label">References</span>
-                        <h3 class="reference-title">Available Upon Request</h3>
+                        <span class="reference-label">Professional Profile</span>
+                        <h3 class="reference-title">IT Technician, Hardware Repair, Red Team, Networking, and IT Security Focus</h3>
                     </div>
                     <div class="reference-content">
                         <p class="reference-text">
-                            Professional references from supervisors, colleagues, and academic mentors 
-                            are available upon request. Please contact me to obtain contact information 
-                            for references.
+                            CompTia Security+ certified IT professional with hands-on experience in
+                            hardware diagnostics and repair, networking, endpoint security,
+                            Red Team-oriented practices,
+                            Active Directory, and operations-focused documentation.
                         </p>
                         <a href="mailto:khatrisa9@gmail.com" class="reference-cta">
-                            Request References
+                            Get In Touch
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                             </svg>
@@ -538,11 +604,11 @@
                     <span class="logo-text">SK</span>
                     <span class="logo-dot"></span>
                 </div>
-                <p class="footer-text">&copy; 2025 Sabin Khatri. All rights reserved.</p>
+                <p class="footer-text">&copy; 2026 Sabin Khatri. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
+                    <a href="#projects">Capabilities</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>
